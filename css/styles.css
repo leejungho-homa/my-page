@@ -1,0 +1,13 @@
+@import "variables.css";
+/* components */
+
+/* screens */
+@import "screens/main.css";
+
+body {
+  height: 500vh;
+  background-color: #f3f3f3;
+  font-family: system-ui, -apple-system, -"Open Sans", "Helvetica Neue",
+    sans-serif;
+  padding: 5px 25px;
+}

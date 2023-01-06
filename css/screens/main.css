@@ -1,0 +1,47 @@
+.nav {
+  position: fixed;
+  z-index: 10;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+.nav-ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.nav__introduce,
+.nav__coding {
+  margin-left: 20px;
+}
+.nav__introduce a,
+.nav__coding a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  margin-top: 100px;
+}
+.info__text {
+  text-align: center;
+  width: 50%;
+}
+.info__photo {
+  width: 50%;
+  height: 100%;
+}
+.form-users {
+  display: flex;
+  margin-top: 20px;
+}
+.form-users__submit,
+.form-users__text {
+  margin-left: 20px;
+  margin-right: 20px;
+}
