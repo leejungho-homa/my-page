@@ -5,6 +5,7 @@
 @import "screens/main.css";
 
 body {
+  margin: 0;
   height: 500vh;
   background-color: #f3f3f3;
   font-family: system-ui, -apple-system, -"Open Sans", "Helvetica Neue",

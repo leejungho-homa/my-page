@@ -65,8 +65,12 @@
   gap: 15px;
 }
 .js-clock {
-  text-align: right;
-}
-.clock {
-  color: black;
+  gap: 10px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: -100px;
+  position: sticky;
+  top: 50px;
 }
