@@ -50,3 +50,23 @@
   margin-top: 20px;
   justify-content: center;
 }
+.result-here {
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.result2 {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  gap: 15px;
+}
+.js-clock {
+  text-align: right;
+}
+.clock {
+  color: black;
+}

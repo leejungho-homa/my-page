@@ -1,3 +1,15 @@
+function inHTML(content) {
+  const MAIN = document.querySelector(".result2");
+  const span = document.createElement("span");
+  const inspan = MAIN.appendChild(span);
+  inspan.innerHTML = `${content}`;
+}
+function Text(content) {
+  return JSON.stringify(content);
+}
+
+// study
+
 // 글자갯수 구하는 함수
 
 function words(a) {
@@ -54,3 +66,32 @@ const baby = {};
 
 baby.__proto__ = Parents;
 console.log(baby.name);
+
+//부모의 부모를 상속하는 법 (진정한 constructor)
+
+class grandpa {
+  constructor(name) {
+    this.first = "김";
+    this.last = name;
+  }
+  sayHi() {
+    console.log("안녕 나는 할아버지");
+  }
+}
+
+class father extends grandpa {
+  constructor(name, age) {
+    super(name);
+    this.age = age;
+  }
+  sayHi2() {
+    console.log("안녕 나는 아버지");
+    super.sayHi();
+  }
+}
+
+var good = new father("만수", 55);
+inHTML(Text(good));
+inHTML(good.sayHi2);
+
+//
