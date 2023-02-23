@@ -94,4 +94,28 @@ var good = new father("만수", 55);
 inHTML(Text(good));
 inHTML(good.sayHi2);
 
+// getter,setter 사용
+
+let data = {
+  odd: [],
+  even: [],
+  get getter() {
+    return [...this.odd, ...this.even].sort(function (a, b) {
+      return a - b;
+    });
+  },
+  set setter(rest) {
+    rest.forEach((a) => {
+      if (a % 2 == 1) {
+        this.odd.push(a);
+      } else {
+        this.even.push(a);
+      }
+    });
+  },
+};
+data.setter = [1, 2, 3, 6, 9, 10, 5, 24, 100, 90];
+console.log(data.getter);
+// 왜 setter 속 parameter에는 rest 함수가 안될까..? parameter로 ...rest는 안됨
+
 //
